@@ -1,0 +1,85 @@
+body{
+    background-color: red;
+    
+    
+}
+h1{
+    text-align:center;
+}
+.scoreb{
+    
+    height:80px;
+    width:130px;
+    background-color: palevioletred;
+    margin-bottom:10px;
+}
+#div1{
+   display:flex;
+   justify-content: center;
+}
+.container{
+    display:flex;
+    height:80vh;
+    width:80%;
+    background-color: yellow;
+    justify-content: space-evenly;
+   
+    flex-wrap: wrap;
+    gap:25px;
+}
+
+ .gc{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background-color: rgb(204, 144, 144);
+    flex-basis: calc(33.33% - 25px);
+    overflow:hidden;
+ 
+ position: relative;
+ }
+ #div0{
+    display:flex;
+    justify-content: center;
+ }
+ .cursor{
+    height:80px;
+    width:80px;
+    top:100px;
+    left:100px;
+     position: absolute;
+     background-color: black;
+     background-size: 100% 100%;
+     pointer-events: none;
+
+ }
+ #img1{
+    height: 80px;
+    width:80px;
+ }
+ .gc .mole{
+    
+    
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(100%); 
+        border-radius: 50%;
+        
+        animation: rise 1s ease-out forwards;
+    }
+ 
+ 
+    @keyframes rise {
+        0% {
+            transform: translateX(-50%) translateY(100%); /* Start below the container */
+        }
+        100% {
+            transform: translateX(-50%) translateY(0); /* End at its normal position */
+        }
+    }
+ 
+ h2{
+    font-size: large;
+ }
