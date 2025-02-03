@@ -1,1 +1,1 @@
-# whack-a-mole-game
+Author:Meghna Ray
